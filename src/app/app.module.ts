@@ -10,6 +10,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
 import { NewpasswordComponent } from './pages/newpassword/newpassword.component';
+import { RoleComponent } from './pages/role/role.component';
+import { UserComponent } from './pages/user/user.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { NewpasswordComponent } from './pages/newpassword/newpassword.component'
     HomeComponent,
     ResetpasswordComponent,
     NewpasswordComponent,
+    RoleComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
    
   ],
   providers: [HttpClient],
